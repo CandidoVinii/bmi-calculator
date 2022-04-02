@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './index.css'
 
 function App() {
   //estado
+
+  const {peso, setPeso} = useState(0);
+  const {altura, setAltura} = useState(0);
+  const {bmi, setBmi} = useState('');
+  const {message, setMessage} = useState('');
+
+  let imgSrc = '';
+
+
   return (
     <div className="App">
       <div className='container'>
