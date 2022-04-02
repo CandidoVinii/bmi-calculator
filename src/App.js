@@ -11,6 +11,18 @@ function App() {
 
   let imgSrc = '';
 
+  let calcaBmi = (event) => {
+    event.preventDefault();
+
+    if (peso === 0 || altura === 0) {
+      alert('Por favor insira os valores de peso e altura');
+    
+    } else {
+      let bmi = (peso / (altura * altura));
+      setBmi(bmi.toFixed(2));
+    }
+  }
+
 
   return (
     <div className="App">
