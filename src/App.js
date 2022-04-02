@@ -28,11 +28,9 @@ function App() {
       }
     }
   }
-
   let reload = () => {
     window.location.reload();
   }
-
 
   return (
     <div className="App">
@@ -40,7 +38,7 @@ function App() {
         <h2 className='center'>BMI calculator</h2>
         <form onSubmit={calcaBmi}>
           <div>
-            <label>Peso</label>
+            <label>Peso (KG)</label>
             <input value={peso} onChange={(e) => setPeso(e.target.value)} />
           </div>
           <div>
